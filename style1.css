@@ -1,0 +1,106 @@
+/* styles.css */
+
+/* If you're using Font Awesome for icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+body {
+    font-family:'Times New Roman', Times, serif; 
+    font-size: medium;
+  
+    margin: 0;
+    padding: 0;
+    background-image: url('/pictures/img4.jpg');
+    background-size: cover; /* Use cover to ensure the background image covers the entire viewport */
+    background-attachment: fixed; /* Fixed background to prevent scrolling */
+    background-position: center; /* Center the background image */
+}
+
+
+
+.navbar .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#main01 {
+    margin-top: 50px;
+    font-size: 2rem;
+
+}
+
+#main01 p {
+    margin-top: 100px;
+    font-size: 1.2rem;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Apply background blur */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(255, 255, 255, 0.1); /* Add shadow and inner shadow */
+    border-radius: 10px;
+    max-width: 800px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: #ffffff; /* Adjust text color for better readability */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition effect */
+    cursor: pointer; /* Change cursor to pointer */
+    display: flex;
+    flex-direction: column;
+}
+
+#main01 p:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Change background color on hover */
+    transform: translateY(-2px); /* Add a slight upward movement on hover */
+}
+
+
+
+#btn01 {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(0, 94, 255);
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn01:hover {
+    background-color: #005bcc;
+}
+
+#main02 {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-item {
+    margin: 0 10px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+

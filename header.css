@@ -1,0 +1,86 @@
+/* style.css */
+
+/* If you're using Font Awesome for icons */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+body {
+    font-family:"Quicksand";
+    margin: 0;
+    padding: 0;
+    background-image: url('https://img.freepik.com/free-vector/gradient-particle-wave-background_23-2150428794.jpg?w=900');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    filter: brightness(100%) saturate(150%);
+}
+
+
+.container {
+    max-width: 1200px;
+    max-height: 50px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div1 {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.div2 {
+    margin-top: 60px;
+}
+
+.navbar {
+    background-color: rgba(23, 11, 11, 0.7);
+    color: #fff;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+.logo-image {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    font-size: larger;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+#dark-mode-toggle {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 8px 12px;
+}
+
+.navbar .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+

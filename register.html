@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Tech Tonic Tribe </title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="div1">
+                    <a href="https://t.me/Techtonic_Tribe/1" class="logo"> <img src="/pictures/ttt.jpg" alt="Company Logo" class="logo-image"></a>
+                </div>
+                <div class="div2">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="members.html">Member List</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="gallery.html">Gallery </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="div01">
+        <div class="div02">
+            <ul>
+                <li>🟢Step One 
+                    <p>-- fill your name --</p> </li>
+                <li>🔵 Step Two 
+                    <p>-- fill your phone number --</p>
+                </li>
+                <li>🔴 Step Three 
+                    <p>-- fill your email --</p>
+                </li>
+                <li>🟠 Step Four 
+                    <p>-- submit your data --</p>
+                </li>
+            </ul>
+        </div>
+        <div class="div002">
+            <div class="div03">
+                <h2 id="h2"> welcome to tech tonic tribe </h2>
+                <p>  hello there, this is the registration page </p>
+            </div>
+            <div class="div04">
+                <form class="form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Eg. Abebe Kebede">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Eg.0901020304">
+                        <small></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required placeholder="Eg, abebe21@gmail.com">
+                    </div>
+                    <div class="form-group">
+                    </div>
+                    <div >
+                        <button type="submit" class="animated-button">
+                            <span>Submit</span>
+                            <span></span>
+                        </button>
+                        <button type="reset" class="animated-button">
+                            <span>Clear</span>
+                            <span></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container" >
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>If you have any questions or inquiries, feel free to get in touch with us.</p>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> Email: info@techtonictribe.com</li>
+                    <li><i class="fas fa-phone"></i> Phone: +1234567890</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Address: Debre Berhan Universty, Debre Berhan , Ethiopia</li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://t.me/Techtonic_Tribe"><i class="fab fa-telegram"></i> Telegram Group</a></li>
+                    <li><a href="https://t.me/TechTonicTribe"><i class="fab fa-telegram"></i> Telegram Channel</a></li>
+                    <li><a href="https://www.linkedin.com/company/techtonic-tribe/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+    
+            // Get form values
+            var name = document.getElementById('name').value;
+            var phone = document.getElementById('phone').value;
+            var email = document.getElementById('email').value;
+    
+            // Create JavaScript object for new user
+            var newUser = {
+                name: name,
+                phone: phone,
+                email: email
+            };
+    
+            // Retrieve existing user data from localStorage or create an empty array
+            var existingUsers = JSON.parse(localStorage.getItem('users')) || [];
+    
+            // Append the new user to the existing array
+            existingUsers.push(newUser);
+    
+            // Save updated user data to localStorage
+            localStorage.setItem('users', JSON.stringify(existingUsers));
+    
+            // Redirect to another page
+            window.location.href = 'members.html';
+        });
+    </script>
+    
+</body>
+</html>
